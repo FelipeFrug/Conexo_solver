@@ -1,3 +1,8 @@
-pyautogui
-bs4
-selenium
+selenium>=4.0.0
+webdriver-manager>=3.8.5
+beautifulsoup4>=4.12.2
+pyautogui>=0.9.53
+numpy>=1.24.0
+torch>=2.0.0
+scikit-learn>=1.2.2
+transformers>=4.30.0
