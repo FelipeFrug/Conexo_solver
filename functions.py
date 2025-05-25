@@ -38,3 +38,13 @@ def enviar_chute_site(driver, palavra):
     except Exception as e:
         print("⚠️ Erro ao tentar ler o resultado:", e)
         return palavra, None
+    
+def get_embedding(word):
+    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    model = BertModel.from_pretrained('bert-base-uncased')
+    with torch.no_grad():
+        inputs = tokenizer(word)
+        outputs = model(**inputs)
+        # Usa o embedding do [CLS] token
+        embedding = outputs.last_hidden_state[0][0].numpy()
+    return embedding
