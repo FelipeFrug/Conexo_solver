@@ -36,7 +36,7 @@ def enviar_chute_site(driver, palavra):
         palavra_retornada, score = texto.split()
         return palavra_retornada.lower(), int(score)
     except Exception as e:
-        print("⚠️ Erro ao tentar ler o resultado:", e)
+        print(f"⚠️ Erro ao tentar ler o resultado da palavra {palavra}:", e)
         return palavra, None
     
 def get_embedding(word):
