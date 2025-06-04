@@ -1,5 +1,9 @@
 # Contexto_solver
 
+Feito por:
+Felipe Frug
+Albert Hamoui
+
 Este projeto tem como objetivo desenvolver um programa capaz de resolver o jogo [Contexto](https://contexto.me) utilizando conhecimentos adquiridos no curso de Processamento de Linguagem Natural.
 
 ## 🔍 Sobre o Projeto
@@ -32,3 +36,8 @@ O repositório contém os seguintes arquivos e pastas:
     pip install -r requirements.txt
     ```
 3. Abra o notebook novo_main.ipynb e execute as células para iniciar o processo de resolução do jogo.
+
+## 🔍 Decisões feitas
+
+- O codigo pega as 10 palavras mais próximas de uma vez para ficar um pouco mais rápido.
+- Ao obter uma palavra no top 10 o codigo está sendo considerado bem sucedido. 
